@@ -16,6 +16,7 @@
 		D6190F0C2992AF3C004CF062 /* RecipeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6190F0B2992AF3C004CF062 /* RecipeListView.swift */; };
 		D6190F0E2992AF3D004CF062 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6190F0D2992AF3D004CF062 /* Assets.xcassets */; };
 		D6190F112992AF3D004CF062 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6190F102992AF3D004CF062 /* Preview Assets.xcassets */; };
+		D6EC1B5B299D412C00D8063C /* RecipeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EC1B5A299D412C00D8063C /* RecipeTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		D6190F0B2992AF3C004CF062 /* RecipeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListView.swift; sourceTree = "<group>"; };
 		D6190F0D2992AF3D004CF062 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6190F102992AF3D004CF062 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D6EC1B5A299D412C00D8063C /* RecipeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 		D60569462997A96200BD274F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D6EC1B5A299D412C00D8063C /* RecipeTabView.swift */,
 				D6190F0B2992AF3C004CF062 /* RecipeListView.swift */,
 				D60569522997F9D800BD274F /* RecipeDetailView.swift */,
 			);
@@ -199,6 +202,7 @@
 				D6190F0C2992AF3C004CF062 /* RecipeListView.swift in Sources */,
 				D6190F0A2992AF3C004CF062 /* Recipe_List_App.swift in Sources */,
 				D60569512997B57C00BD274F /* DataService.swift in Sources */,
+				D6EC1B5B299D412C00D8063C /* RecipeTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
