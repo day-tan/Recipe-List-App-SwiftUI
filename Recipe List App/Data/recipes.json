@@ -65,7 +65,7 @@
     },
     {
         "name": "Baked Teriyaki Chicken",
-        "featured": false,
+        "featured": true,
         "image" : "chicken teriyaki",
         "description": "A sweet and savory favourite.",
         "prepTime": "30 minutes",
