@@ -25,7 +25,7 @@ struct RecipeDetailView: View {
                 
                 // MARK: Recipe Title
                 Text(recipe.name)
-                    .font(.largeTitle)
+                    .font(Font.custom("Avenir Heavy", size: 25))
                     .fontWeight(.bold)
                     .padding(.top, 20.0)
                     .padding(.leading)
@@ -34,6 +34,7 @@ struct RecipeDetailView: View {
                 VStack(alignment: .leading) {
                     
                     Text("Select your serving size:")
+                        .font(Font.custom("Avenir", size: 16))
                     Picker("", selection: $selectedServingSize) {
                         Text("2").tag(2)
                         Text("4").tag(4)
@@ -41,6 +42,7 @@ struct RecipeDetailView: View {
                         Text("8").tag(8)
                         
                     }
+                    .font(Font.custom("Avenir", size: 16))
                     .pickerStyle(.segmented)
                     .frame(width: 170)
                 }
@@ -51,11 +53,12 @@ struct RecipeDetailView: View {
                 VStack(alignment: .leading) {
                     
                     Text("Ingredients")
-                        .font(.headline)
+                        .font(Font.custom("Avenir Heavy", size: 17))
                         .padding(.vertical, 5)
                     
                     ForEach(recipe.ingredients) { item in
                         Text("• \(RecipeModel.getPortion(ingredient: item, recipeServings: recipe.servings, targetServings: selectedServingSize)) \(item.name.lowercased())")
+                            .font(Font.custom("Avenir", size: 16))
                     }
                     
                 }
@@ -67,13 +70,14 @@ struct RecipeDetailView: View {
                 VStack(alignment: .leading) {
                     
                     Text("Directions")
-                        .font(.headline)
+                        .font(Font.custom("Avenir Heavy", size: 17))
                         .padding(.vertical, 5)
                     
                     ForEach(0..<recipe.directions.count, id: \.self) { index in
                         
                         Text(String(index + 1) + ". " + recipe.directions[index])
                             .padding(/*@START_MENU_TOKEN@*/.bottom, 5.0/*@END_MENU_TOKEN@*/)
+                            .font(Font.custom("Avenir", size: 16))
                     }
                 }
                 .padding(.horizontal)
